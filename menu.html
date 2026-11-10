@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today Special Menu</title>
+  <meta name="description" content="This is special menu.">
+  <meta name="keywords" content="Html,List, Image Gallery, Animation, Layout">
+  <meta property="og:title" content="Special-menu">
+  <meta property="og:description" content="This is menu page.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/common/.png">
+  <meta property="og:site_name" content="Menu-page">
+  <meta property="og:url" content="https://cgm-myanmar.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/menu.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+  <header class="main-header" id="main-header">
+    <div class="header-inner sec-wrap">
+      <a href="./top.html" class="logo-link" aria-label="Coffee Shop Home">
+        <img src="./assets/Image/common/ico_header_logo.png" alt="Coffee Shop Logo" width="100" height="75"
+          class="logo-img">
+      </a>
+      <nav class="header-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="./top.html" class="nav-link">Home</a></li>
+          <li><a href="../menu.html" class="nav-link active">Menu</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <div class="header-cta">
+              <a href="../contact.html" class="btn-primary">Order Now !</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open Menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <ul class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <li><a href="./top.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="./menu.html" class="mobile-nav-link">Menu</a></li>
+      <li><a href="./about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="./contact.html" class="mobile-nav-link">Contact</a></li>
+      <li>
+        <div class="header-cta">
+          <a href="#" class="btn-primary">Order Now !</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+  <section class="sec-special-menu">
+    <div class="sec-wrap">
+      <div class="header-title">
+        <h1 class="sec-ttl">today special</h1>
+      </div>
+      <div class="menu-grid">
+        <span class="special-card">
+          <div class="menu-item">
+            <img src="./assets/Image/menu/img_pizza.png" alt="BBQ Chicken Pizza" class="menu-img" width height>
+            <h2 class="item-title">BBQ Chicken Pizza</h2>
+            <p class="item-desc">A delicious pizza topped with tender grilled
+              chicken, smoky BBQ sauce, melted mozzarella cheese, and fresh
+              onions on a crispy baked crust. Sweet and savory flavors combine
+              to create a rich and satisfying taste in every bite.</p>
+          </div>
+        </span>
+        <span class="special-card card-reverse">
+          <div class="menu-item-b">
+            <h2 class="item-title-b">Chef's Special<br>Fried Rice</h2>
+            <p class="item-desc-b">A flavorful fried rice cooked with fragrant
+              rice, mixed vegetables, tender chicken, shrimp, and savory
+              seasonings. Stir-fried in a hot wok and topped with fresh herbs
+              for a delicious and satisfying dish prepared in the chef's
+              special style.</p>
+            <img src="./assets/Image/menu/img_friedrice.png" alt="Chef's Special Fried Rice" class="menu-img" width
+              height>
+          </div>
+        </span>
+
+        <span class="special-card">
+          <div class="menu-item-c">
+            <img src="./assets/Image/menu/img_burger.png" alt="Golden Crispy Chicken Burger" class="menu-img" width
+              height>
+            <h2 class="item-title-c">Golden Crispy<br>Chicken Burger</h2>
+            <p class="item-desc-c">A juicy, golden-fried chicken fillet served
+              in a soft toasted bun with fresh lettuce, sliced tomato, and
+              creamy mayonnaise. Crispy on the outside and tender inside, this
+              burger delivers a delicious crunch and rich flavor in every
+              bite.</p>
+          </div>
+        </span>
+
+      </div>
+    </div>
+  </section>
+  <section class="sec-menu-list">
+    <div class="sec-wrap">
+      <div class="menu-header-title">
+        <h1 class="sec-ttl">menu</h1>
+      </div>
+      <h2 class="sub-title">TASTE OUR FLAVOUR</h2>
+
+      <div class="menu-tabs">
+        <span class="tab-item active">Drinks</span>
+        <span class="tab-item">Desserts</span>
+        <span class="tab-item">Pizza & Fast Food</span>
+      </div>
+
+      <div class="menu-list-grid">
+        <div class="menu-list-image-wrapper">
+          <img src="./assets/Image/menu/img_drinks.png" alt="Taste Our Flavour" class="menu-list-img" width height>
+        </div>
+
+        <div class="drinks-header-wrapper">
+          <span class="drink-text">Drinks</span>
+        </div>
+
+        <div class="menu-items-price-list">
+
+          <div class="price-item" data-anim="fade-up" data-delay="0.2">
+            <span class="item-name">Matcha Latte</span>
+            <span class="item-dots"></span>
+            <span class="item-price">7500 MMK</span>
+          </div>
+
+          <div class="price-item" data-anim="fade-up" data-delay="0.4">
+            <span class="item-name">Hot Americano</span>
+            <span class="item-dots"></span>
+            <span class="item-price">5500 MMK</span>
+          </div>
+
+          <div class="price-item" data-anim="fade-up" data-delay="0.6">
+            <span class="item-name">Avogado Yogurt</span>
+            <span class="item-dots"></span>
+            <span class="item-price">10000 MMK</span>
+          </div>
+
+          <div class="price-item" data-anim="fade-up" data-delay="0.8">
+            <span class="item-name">Hot Cuppuccino</span>
+            <span class="item-dots"></span>
+            <span class="item-price">7000 MMK</span>
+          </div>
+
+          <div class="price-item" data-anim="fade-up" data-delay="1.0">
+            <span class="item-name">Jasmine Green Tea</span>
+            <span class="item-dots"></span>
+            <span class="item-price">8000 MMK</span>
+          </div>
+          <div class="price-item" data-anim="fade-up" data-delay="1.2">
+            <span class="item-name">Fresh Iced Lemon Tea</span>
+            <span class="item-dots"></span>
+            <span class="item-price">8000 MMK</span>
+          </div>
+          <div class="price-item" data-anim="fade-up" data-delay="1.4">
+            <span class="item-name">Strawberry Smoothie</span>
+            <span class="item-dots"></span>
+            <span class="item-price">5500 MMK</span>
+          </div>
+
+          <div class="price-item" data-anim="fade-up" data-delay="1.6">
+            <span class="item-name">Bang Bang Chocolate</span>
+            <span class="item-dots"></span>
+            <span class="item-price">6100 MMK</span>
+          </div>
+
+          <div class="price-item" data-anim="fade-up" data-delay="1.8">
+            <span class="item-name">Mango Tea with QQ Jelly</span>
+            <span class="item-dots"></span>
+            <span class="item-price">5500 MMK</span>
+          </div>
+
+          <div class="price-item" data-anim="fade-up" data-delay="2.0">
+            <span class="item-name">Oreo Brown Sugar Milk Tea</span>
+            <span class="item-dots"></span>
+            <span class="item-price">10800 MMK</span>
+          </div>
+
+          <div class="price-item" data-anim="fade-up" data-delay="2.2">
+            <span class="item-name">Iced Black Diamond Milk Tea</span>
+            <span class="item-dots"></span>
+            <span class="item-price">5500 MMK</span>
+          </div>
+
+          <div class="price-item" data-anim="fade-up" data-delay="2.4">
+            <span class="item-name">Regular Size Thai Peal Milk Tea</span>
+            <span class="item-dots"></span>
+            <span class="item-price">9500 MMK</span>
+          </div>
+
+          <div class="order-btn-wrapper">
+            <button class="menu-order-btn">Order Now...</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec-promo">
+    <div class="sec-wrap">
+      <div class="promo-banner">
+        <div class="promo-img-holder">
+          <img src="./assets/Image/menu/img_bellacream.png" alt="Coffee">
+        </div>
+        <div class="promo-content-holder">
+          <h2>BellaCrema </h2>
+          <span>Expresso</span>
+          <p>Savor the rich aroma and bold flavor of our locally roasted
+            coffee. Support local farmers while enjoying every perfect
+            cup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="footer-inner sec-wrap">
+      <div class="footer-top">
+        <div class="footer-brand" data-anim="fade-up" data-delay="0">
+          <a href="./top.html" class="logo-link" aria-label="Coffee Shop Home">
+            <img src="./assets/Image/common/ico_footer_logo.png" alt="Coffee Shop Logo" width="150" height="110"
+              class="footer-logo-img">
+          </a>
+          <p class="footer-slogan">TASTE OUR FLAVOUR</p>
+        </div>
+        <div class="footer-top-wrap">
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="./top.html" class="footer-nav-link" data-anim="fade-up" data-delay="0.1">Home</a>
+            <a href="./about.html" class="footer-nav-link" data-anim="fade-up" data-delay="0.15">About</a>
+            <a href="./menu.html" class="footer-nav-link" data-anim="fade-up" data-delay="0.2">Menu</a>
+            <a href="./contact.html" class="footer-nav-link" data-anim="fade-up" data-delay="0.25">Contact</a>
+          </nav>
+          <hr>
+          <div class="footer-box-wrapper">
+            <div class="footer-newsletter" data-anim="fade-up" data-delay="0.3">
+              <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
+                <label for="newsletter-email" class="sr-only">Email
+                  Address</label>
+                <input type="email" id="newsletter-email" name="email" class="newsletter-input"
+                  placeholder="Enter your email here" required aria-label="Enter your email for newsletter">
+                <button type="submit" class="newsletter-btn">Send</button>
+              </form>
+            </div>
+            <ul class="footer-socials" data-anim="fade-up" data-delay="0.4">
+              <li>
+                <a href="https://facebook.com/theCoffeeShopYangon" class="social-link" aria-label="Facebook">
+                  <img src="./assets/Image/common/ico_fb.png" alt="Facebook" width="30" height="30">
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/theCoffeeShopYangon" class="social-link" aria-label="Instagram">
+                  <img src="./assets/Image/common/ico_instagram.png" alt="Instagram" width="30" height="30">
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/theCoffeeShopYangon" class="social-link" aria-label="X (Twitter)">
+                  <img src="./assets/Image/common/ico_twitter.png" alt="X (Twitter)" width="30" height="30">
+                </a>
+              </li>
+              <li>
+                <a href="https://tiktok.com/@theCoffeeShopYangon" class="social-link" aria-label="TikTok">
+                  <img src="./assets/Image/common/ico_tiktok.png" alt="TikTok" width="30" height="30">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    <p class="copyright">Copyright &copy;2026 All Rights Reserved</p>
+  </div>
+
+  <script src="./assets/js/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coffee Shop - Learn more about our coffee shop story, mission, and chefs.">
+  <meta name="keywords" content="Html,List, Image Gallery, Animation, Layout">
+  <meta property="og:title" content="All we need is Coffee">
+  <meta property="og:description" content="This is About page.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Logo Image">
+  <meta property="og:site_name" content="About-page">
+  <meta property="og:url" content="https://cgm-myanmar.com/">
+  
+  <link rel="icon" href="./assets/Image/common/ico_logo.ico" type="image/x-icon">
+  <title>About - Coffee Shop</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons for Socials and UI elements -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="./assets/css/about.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+</head>
+
+<body>
+  <header class="main-header" id="main-header">
+    <div class="header-inner sec-wrap">
+      <a href="./top.html" class="logo-link" aria-label="Coffee Shop Home">
+        <img src="./assets/Image/common/ico_header_logo.png" alt="Coffee Shop Logo" width="100" height="75" class="logo-img">
+      </a>
+      <nav class="header-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="./top.html" class="nav-link">Home</a></li>
+          <li><a href="../menu.html" class="nav-link">Menu</a></li>
+          <li><a href="../about.html" class="nav-link active">About</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <div class="header-cta">
+              <a href="../contact.html" class="btn-primary">Order Now !</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open Menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <ul class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <li><a href="./top.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="./menu.html" class="mobile-nav-link">Menu</a></li>
+      <li><a href="./about.html" class="mobile-nav-link active">About</a></li>
+      <li><a href="./contact.html" class="mobile-nav-link">Contact</a></li>
+      <li>
+        <div class="header-cta">
+          <a href="#" class="btn-primary">Order Now !</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="sec-chef" data-anim="fade-up">
+      <div class="sec-wrap">
+        <div class="chef-header-wrap">
+          <h2 class="sec-ttl" data-anim="fade-up" data-delay="0.1">meet our
+            chef</h2>
+          <p class="chef-lead" data-anim="fade-up" data-delay="0.2">
+            Our chef is passionate about creating delicious and comforting
+            dishes for every guest. With creativity and dedication, each meal
+            is carefully prepared using fresh ingredients and thoughtful
+            recipes. From savory meals to delightful desserts, our chef
+            ensures every plate brings warmth, flavor, and a memorable
+            experience to your table.
+          </p>
+
+        </div>
+
+        <div class="chef-list">
+          <article class="chef-card" data-anim="fade-up" data-delay="0.3">
+            <div class="chef-img-wrap">
+              <img src="./assets/Image/about/img_chef_1.png" alt="Gordan Ramsay - Barista" loading="lazy" width="270"
+                height="270">
+            </div>
+            <h3 class="chef-name">Gordan Ramsay</h3>
+            <p class="chef-role">Barista</p>
+          </article>
+
+          <article class="chef-card" data-anim="fade-up" data-delay="0.4">
+            <div class="chef-img-wrap">
+              <img src="./assets/Image/about/img_chef_2.png" alt="Emeril Lagasse - Barista" loading="lazy" width="270"
+                height="270">
+            </div>
+            <h3 class="chef-name">Emeril Lagasse</h3>
+            <p class="chef-role">Barista</p>
+          </article>
+
+          <article class="chef-card" data-anim="fade-up" data-delay="0.5">
+            <div class="chef-img-wrap">
+              <img src="./assets/Image/about/img_chef_3.png" alt="Andrew Zimmern - Pizza Chef" loading="lazy" width="270"
+                height="270">
+            </div>
+            <h3 class="chef-name">Andrew Zimmern</h3>
+            <p class="chef-role">Pizza Chef</p>
+          </article>
+          <article class="chef-card" data-anim="fade-up" data-delay="0.6">
+            <div class="chef-img-wrap">
+              <img src="./assets/Image/about/img_chef_4.png" alt="Hilda Baci - Burger Chef" loading="lazy" width="270"
+                height="270">
+            </div>
+            <h3 class="chef-name">Hilda Baci</h3>
+            <p class="chef-role">Burger Chef</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="sec-history" data-anim="fade-up">
+      <div class="history-overlay"></div>
+
+      <div class="sec-wrap">
+        <h2 class="sec-ttl" data-anim="fade-up" data-delay="0.1">our
+          history</h2>
+
+        <div class="history-timeline">
+          <div class="timeline-line"></div>
+          <div class="timeline-row row-right">
+            <article class="timeline-content" data-anim="fade-up" data-delay="0.2">
+              <span class="timeline-year">2022</span>
+              <h3 class="timeline-title">The Beginning</h3>
+              <p class="timeline-desc">
+                We started with a simple dream: to create a cozy place where
+                people could enjoy fresh, honest food. With a small team and
+                big passion, we opened our doors and welcomed our first
+                guests, hoping to become a warm spot in the neighborhood.
+              </p>
+            </article>
+          </div>
+
+          <div class="timeline-row row-left">
+            <article class="timeline-content" data-anim="fade-up" data-delay="0.3">
+              <span class="timeline-year">2023</span>
+              <h3 class="timeline-title">Building Trust</h3>
+              <p class="timeline-desc">
+                Word spread, and more families, friends, and food lovers began
+                visiting us. We improved our kitchen standards, refined our
+                recipes, and listened closely to customer feedback. This year
+                was all about building trust and consistency.
+              </p>
+            </article>
+          </div>
+
+          <div class="timeline-row row-right">
+            <article class="timeline-content" data-anim="fade-up" data-delay="0.4">
+              <span class="timeline-year">2024</span>
+              <h3 class="timeline-title">Growing Together</h3>
+              <p class="timeline-desc">
+                Our team grew with dedicated members who shared our vision. We
+                upgraded our space, added comfort elements, and focused on
+                delivering even better experiences with every meal.
+              </p>
+            </article>
+          </div>
+
+          <div class="timeline-row row-left">
+            <article class="timeline-content" data-anim="fade-up" data-delay="0.5">
+              <span class="timeline-year">2025</span>
+              <h3 class="timeline-title">Becoming a Community Favorite</h3>
+              <p class="timeline-desc">
+                Our menu expanded with new favorites, and our team grew with
+                dedicated members who shared our vision. We upgraded our
+                space, added comfort elements, and focused on delivering even
+                better experiences with every meal.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="footer-inner sec-wrap">
+      <div class="footer-top">
+        <div class="footer-brand" data-anim="fade-up" data-delay="0">
+          <a href="./top.html" class="logo-link" aria-label="Coffee Shop Home">
+            <img src="./assets/Image/common/ico_footer_logo.png" alt="Coffee Shop Logo" width="150" height="110"
+              class="footer-logo-img">
+          </a>
+          <p class="footer-slogan">TASTE OUR FLAVOUR</p>
+        </div>
+        <div class="footer-top-wrap">
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="./top.html" class="footer-nav-link" data-anim="fade-up" data-delay="0.1">Home</a>
+            <a href="./about.html" class="footer-nav-link active" data-anim="fade-up" data-delay="0.15">About</a>
+            <a href="./menu.html" class="footer-nav-link" data-anim="fade-up" data-delay="0.2">Menu</a>
+            <a href="./contact.html" class="footer-nav-link" data-anim="fade-up" data-delay="0.25">Contact</a>
+          </nav>
+          <hr>
+          <div class="footer-box-wrapper">
+            <div class="footer-newsletter" data-anim="fade-up" data-delay="0.3">
+              <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
+                <label for="newsletter-email" class="sr-only">Email Address</label>
+                <input type="email" id="newsletter-email" name="email" class="newsletter-input"
+                  placeholder="Enter your email here" required aria-label="Enter your email for newsletter">
+                <button type="submit" class="newsletter-btn">Send</button>
+              </form>
+            </div>
+            <ul class="footer-socials" data-anim="fade-up" data-delay="0.4">
+              <li>
+                <a href="https://facebook.com/theCoffeeShopYangon" class="social-link" aria-label="Facebook">
+                  <img src="./assets/Image/common/ico_fb.png" alt="Facebook" width="30" height="30">
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/theCoffeeShopYangon" class="social-link" aria-label="Instagram">
+                  <img src="./assets/Image/common/ico_instagram.png" alt="Instagram" width="30" height="30">
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/theCoffeeShopYangon" class="social-link" aria-label="X (Twitter)">
+                  <img src="./assets/Image/common/ico_twitter.png" alt="X (Twitter)" width="30" height="30">
+                </a>
+              </li>
+              <li>
+                <a href="https://tiktok.com/@theCoffeeShopYangon" class="social-link" aria-label="TikTok">
+                  <img src="./assets/Image/common/ico_tiktok.png" alt="TikTok" width="30" height="30">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    <p class="copyright">Copyright &copy;2026 All Rights Reserved</p>
+  </div>
+  <!-- JavaScript Links -->
+  <script src="./assets/js/about.js"></script>
+  <script src="./assets/js/common.js"></script>
+</body>
+
+</html>

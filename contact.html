@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop - Contact Our Flavour</title>
+  <meta name="description"
+    content="Coffee Shop – Fresh, organic coffee and delicious food. Taste our flavour every day.">
+  <meta name="keywords" content="Html,List, Image Gallery, Animation, Layout">
+  <meta property="og:title" content="All we need is Coffee">
+  <meta property="og:description" content="This is contact page.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Logo Image">
+  <meta property="og:site_name" content="Contact">
+  <meta property="og:url" content="https://cgm-myanmar.com/">
+
+  <link rel="icon" href="./assets/Image/common/ico_logo.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/contact.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <header class="main-header" id="main-header">
+    <div class="header-inner">
+      <a href="./top.html" class="logo-link" aria-label="Coffee Shop Home">
+        <img src="./assets/Image/common/ico_header_logo.png" alt="Coffee Shop Logo" width="100" height="75"
+          class="logo-img">
+      </a>
+      <nav class="header-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="./top.html" class="nav-link">Home</a></li>
+          <li><a href="../menu.html" class="nav-link">Menu</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../contact.html" class="nav-link active">Contact</a></li>
+          <li>
+            <div class="header-cta">
+              <a href="../contact.html" class="btn-primary">Order Now !</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open Menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <ul class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <li><a href="./top.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="./menu.html" class="mobile-nav-link">Menu</a></li>
+      <li><a href="./about.html" class="mobile-nav-link">About</a></li>
+      <li><a href="./contact.html" class="mobile-nav-link">Contact</a></li>
+      <li>
+        <div class="header-cta">
+          <a href="#" class="btn-primary">Order Now !</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="sec-contact-hero" id="sec-touch">
+      <div class="sec-wrap">
+        <div class="intro-message-box">
+          <div class="heading-text-group">
+            <h2 class="sec-ttl"><span>get in touch</span></h2>
+            <p class="paragraph-lead-text">
+              We'd love to hear from you! Whether you have a question,
+              feedback, or want to learn more about our menu and services,
+              feel free to reach out to us. Our team is always happy to help
+              and make your experience even better. Visit our coffee shop,
+              give us a call, or send us a message—we look forward to
+              welcoming you soon.
+            </p>
+          </div>
+          <div class="cta-button-holder">
+            <a href="#sec-message" class="theme-custom-btn" id="btn-scroll-to-message">Send Message Now</a>
+          </div>
+        </div>
+
+        <div class="location-grid-dashboard">
+          <div class="contact-cards-stack">
+            <div class="info-details-card">
+              <h3 class="card-meta-label">LOCATION</h3>
+              <p class="card-body-desc">No.123, Barista Lane, Vangon,
+                Myanmar</p>
+            </div>
+            <div class="info-details-card">
+              <h3 class="card-meta-label">PHONE</h3>
+              <p class="card-body-desc">
+                <a href="tel:+959450606129" class="direct-phone-link">+ 959
+                  450 606 129</a>
+              </p>
+            </div>
+
+            <div class="info-details-card">
+              <h3 class="card-meta-label">HOURS</h3>
+              <p class="card-body-desc">Open Daily : 8am - 9pm</p>
+            </div>
+          </div>
+          <div class="map-embed-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3496.775726763973!2d96.1726661!3d16.7721628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed3baf623315%3A0x3940d28162a3a831!2sCGM%20Golden%20Land%20Co.%2C%20Ltd.!5e1!3m2!1sen!2smm!4v1780561566052!5m2!1sen!2smm"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              class="embedded-google-map"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-brand-divider" id="sec-community">
+      <div class="dynamic-marquee-wrapper sec-wrap">
+        <span class="marquee-heading">Our Community</span>
+        <div class="center-graphic-container">
+          <img src="./assets/Image/contact/img_teaview_2.png" alt="Coffee Cup" width="" height="">
+        </div>
+        <span class="marquee-heading">Your Coffee</span>
+      </div>
+    </section>
+
+    <section class="sec-feedback" id="sec-message">
+      <div class="global-layout-holder sec-wrap">
+        <div class="heading-text-group">
+          <h2 class="sec-ttl"><span>send us a message</span></h2>
+          <p class="paragraph-lead-text">
+            Your feedback is important to us. Please do not hesitate to
+            contact us with any questions or comments regarding your visit. We
+            will endeavor to respond to your message as promptly as possible.
+          </p>
+        </div>
+
+        <form class="interactive-contact-form" action="#" method="POST">
+          <div class="form-structure-container">
+            <div class="dual-column-inputs">
+              <div class="input-field-wrapper">
+                <input type="text" id="form-input-name" class="standard-text-input" name="name" placeholder="Name"
+                  required>
+              </div>
+              <div class="input-field-wrapper">
+                <input type="email" id="form-input-email" class="standard-text-input" name="email" placeholder="Email"
+                  required>
+              </div>
+            </div>
+
+            <div class="input-field-wrapper">
+              <input type="text" class="standard-text-input" id="form-input-subject" name="subject"
+                placeholder="Subject" required>
+            </div>
+
+            <div class="input-field-wrapper">
+              <textarea id="form-content" class="standard-textarea-input" name="message" placeholder="Message" rows="5"
+                required></textarea>
+            </div>
+          </div>
+
+          <div class="cta-button-holder">
+            <button type="submit" class="theme-custom-btn">Submit
+              Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="sec-social-channels" id="sec-connected">
+      <div class="social-grid-container social-grid">
+        <h2 class="alt-display-title">STAY CONNECTED</h2>
+        <div class="network-links-matrix">
+          <a href="https://facebook.com/theCoffeeShopYangon" class="social-profile-card" target="_blank"
+            rel="noopener noreferrer">
+            <div class="media-icon-block">
+              <img src="./assets/Image/contact/ico_fb.png" alt="Facebook" class="vector-brand-icon" width="" height="">
+              <span class="social-profile-tag">@theCoffeeShopYangon</span>
+            </div>
+          </a>
+          <a href="https://instagram.com/theCoffeeShopYangon" class="social-profile-card" target="_blank"
+            rel="noopener noreferrer">
+            <div class="media-icon-block">
+              <img src="./assets/Image/contact/ico_instagram.png" alt="Instagram" class="vector-brand-icon" width=""
+                height="">
+              <span class="social-profile-tag">@theCoffeeShopYangon</span>
+            </div>
+          </a>
+          <a href="https://x.com/theCoffeeShopYangon" class="social-profile-card" target="_blank"
+            rel="noopener noreferrer">
+            <div class="media-icon-block">
+              <img src="./assets/Image/contact/ico_twitter.png" alt="Twitter/X" class="vector-brand-icon" width=""
+                height="">
+              <span class="social-profile-tag">@theCoffeeShopYangon</span>
+            </div>
+          </a>
+          <a href="https://tiktok.com/@theCoffeeShopYangon" class="social-profile-card" target="_blank"
+            rel="noopener noreferrer">
+            <div class="media-icon-block">
+              <img src="./assets/Image/contact/ico_tiktok.png" alt="TikTok" class="vector-brand-icon" width=""
+                height="">
+              <span class="social-profile-tag">@theCoffeeShopYangon</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand" data-anim="fade-up" data-delay="0">
+          <a href="./top.html" class="logo-link" aria-label="Coffee Shop Home">
+            <img src="./assets/Image/common/ico_footer_logo.png" alt="Coffee Shop Logo" width="150" height="110"
+              class="footer-logo-img">
+          </a>
+          <p class="footer-slogan">TASTE OUR FLAVOUR</p>
+        </div>
+        <div class="footer-top-wrap">
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="./top.html" class="footer-nav-link" data-anim="fade-up" data-delay="0.1">Home</a>
+            <a href="./about.html" class="footer-nav-link" data-anim="fade-up" data-delay="0.15">About</a>
+            <a href="./menu.html" class="footer-nav-link" data-anim="fade-up" data-delay="0.2">Menu</a>
+            <a href="./contact.html" class="footer-nav-link" data-anim="fade-up" data-delay="0.25">Contact</a>
+          </nav>
+          <hr>
+          <div class="footer-box-wrapper">
+            <div class="footer-newsletter" data-anim="fade-up" data-delay="0.3">
+              <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
+                <label for="newsletter-email" class="sr-only">Email Address</label>
+                <input type="email" id="newsletter-email" name="email" class="newsletter-input"
+                  placeholder="Enter your email here" required aria-label="Enter your email for newsletter">
+                <button type="submit" class="newsletter-btn">Send</button>
+              </form>
+            </div>
+            <ul class="footer-socials" data-anim="fade-up" data-delay="0.4">
+              <li>
+                <a href="https://facebook.com/theCoffeeShopYangon" class="social-link" aria-label="Facebook">
+                  <img src="./assets/Image/common/ico_fb.png" alt="Facebook" width="30" height="30">
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/theCoffeeShopYangon" class="social-link" aria-label="Instagram">
+                  <img src="./assets/Image/common/ico_instagram.png" alt="Instagram" width="30" height="30">
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/theCoffeeShopYangon" class="social-link" aria-label="X (Twitter)">
+                  <img src="./assets/Image/common/ico_twitter.png" alt="X (Twitter)" width="30" height="30">
+                </a>
+              </li>
+              <li>
+                <a href="https://tiktok.com/@theCoffeeShopYangon" class="social-link" aria-label="TikTok">
+                  <img src="./assets/Image/common/ico_tiktok.png" alt="TikTok" width="30" height="30">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    <p class="copyright">Copyright &copy;2026 All Rights Reserved</p>
+  </div>
+
+  <script src="./assets/js/contact.js"></script>
+  <script src="./assets/js/common.js"></script>
+
+</body>
+
+</html>
