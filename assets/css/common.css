@@ -255,9 +255,7 @@ textarea {
   color: var(--clr-primary);
 }
 
-.mobile-order-btn {
-  margin-top: 20px;
-}
+
 
 .main-footer {
   background-color: var(--clr-dark-coffee);
@@ -324,7 +322,7 @@ textarea {
 }
 
 .footer-nav-link:focus-visible {
-  outline: 2px var(--clr-white);
+  outline: 2px solid var(--clr-white);
   outline-offset: 3px;
 }
 
@@ -356,7 +354,6 @@ textarea {
 }
 
 .newsletter-input {
-  background: transparent;
   background-color: var(--clr-secondary);
   border: none;
   outline: none;

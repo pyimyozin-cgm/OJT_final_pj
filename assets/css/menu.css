@@ -32,7 +32,7 @@
 }
 
 body {
-  color: #333;
+  color: var(--clr-neutral-900-box);
   line-height: 1.6;
   font-family: var(--font-primary);
 }
